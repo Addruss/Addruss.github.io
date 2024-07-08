@@ -4,37 +4,22 @@
     "start_url":"/",
     "display":"standalone",
     "icons": [
-    {
-      "src": "/assets/images/icons/icon-72x72.png",
-      "type": "image/png", "sizes": "72x72"
+        {
+      "src": "/assets/images/icons/circle.ico",
+      "sizes": "48x48"
     },
     {
-      "src": "/assets/images/icons/icon-96x96.png",
-      "type": "image/png", "sizes": "96x96"
+      "src": "/assets/images/icons/circle.svg",
+      "sizes": "72x72 96x96",
+      "purpose": "maskable"
     },
     {
-      "src": "/assets/images/icons/icon-128x128.png",
-      "type": "image/png","sizes": "128x128"
+      "src": "/assets/images/icons/tire.svg",
+      "sizes": "128x128 256x256"
     },
     {
-      "src": "/assets/images/icons/icon-144x144.png",
-      "type": "image/png", "sizes": "144x144"
-    },
-    {
-      "src": "/assets/images/icons/icon-152x152.png",
-      "type": "image/png", "sizes": "152x152"
-    },
-    {
-      "src": "/assets/images/icons/icon-192x192.png",
-      "type": "image/png", "sizes": "192x192"
-    },
-    {
-      "src": "/assets/images/icons/icon-384x384.png",
-      "type": "image/png", "sizes": "384x384"
-    },
-    {
-      "src": "/assets/images/icons/icon-512x512.png",
-      "type": "image/png", "sizes": "512x512"
+      "src": "/assets/images/icons/wheel.svg",
+      "sizes": "512x512"
     }
   ],
   "theme_color": "#eeffee",
