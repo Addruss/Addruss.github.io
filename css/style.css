@@ -1,4 +1,10 @@
-/* General body styling */
+#mobil_vertical{display:none;}
+#mobil_horizontal{display:none;}
+#tablet_vertical{display:none;}
+#tablet_horizontal{display:none;}
+#escritorio{display:none;}
+
+/*==================General styling for all devices=============*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,13 +14,13 @@ body {
 
 header {
     position: fixed;
-    top: 0%;
-    left: 0%;
-    right: 0%;
+    top: 0;
+    width: 100%;
     background-color: #4CAF50;
     color: white;
     padding: 20px;
-    text-align: center;
+    text-align: left;
+    z-index: 1;
 }
 
 header h1 {
@@ -33,7 +39,7 @@ header h2 {
     }
         
         .album {
-            padding: 130px 10px 75px;
+            padding: 80px 0px 50px;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
@@ -45,19 +51,21 @@ header h2 {
                 border-radius: 8px;
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
                 margin: 10px;
-                padding: 20px;
-                max-width: 1000px;
-                text-align: center;
+                padding: 20px 20px 40px;
+                width: 100%;
             }
 
             .card h2 {
+                position: relative;
+                left: 0%;
                 margin: 0 0 10px;
                 font-size: 24px;
             }
 
             .card p {
+                text-align: justify;
                 margin: 0 0 15px;
-                font-size: 16px;
+                font-size: 16px; 
             }
 
             .card button {
@@ -68,10 +76,6 @@ header h2 {
                 border-radius: 4px;
                 cursor: pointer;
                 transition: background-color 0.3s ease;
-            }
-
-            .card button:hover {
-                background-color: #0056b3;
             }
 
     /* Alerts page styling */
@@ -85,7 +89,7 @@ header h2 {
     }
     
         .notifications {
-            padding: 130px 10px 75px;
+            padding: 110px 10px 75px;
             display: grid;
             grid-template:"div";
             gap: 10px;
@@ -115,8 +119,7 @@ header h2 {
     #nav {
         position:fixed;
         bottom: 0%; 
-        left: 0%;
-        right: 0%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         background-color: #333;
@@ -139,3 +142,92 @@ header h2 {
             font-size: 18px;
             font-weight: normal;
         }
+
+/*================== Mobile vertical styling =============*/
+@media only screen and (max-width: 480px) and (orientation: portrait) and (pointer: coarse) and (hover: none){
+    #mobil_vertical{
+        display: contents;
+    }
+} 
+
+/*================== Mobile horizontal styling =============*/
+@media only screen and (max-height: 480px) and (orientation: landscape) and (pointer: coarse) and (hover: none){
+    #mobil_horizontal{
+        display:contents;
+    }
+
+    header{
+        padding: 8px;
+        text-align: left;
+        z-index: 1;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .album{
+        padding: 50px 0px 30px;
+    }
+
+    .notifications {
+        padding: 80px 10px 60px;
+    }
+
+    /* Navigation bar styling */
+    #nav {
+        padding: 1px 0;
+    }
+
+}
+
+/*================== Tablet vertical styling =============*/
+@media only screen and (min-width: 481px) and (orientation: portrait) and (pointer: coarse) and (hover: none){
+    #tablet_vertical{
+        display:contents;
+    }    
+}
+
+/*================== Tablet horizontal styling =============*/
+@media only screen and (min-height: 481px) and (orientation: landscape) and (pointer: coarse) and (hover: none){
+    #tablet_horizontal{
+        display:contents;
+    }
+
+    header{
+        padding: 8px;
+        text-align: left;
+        z-index: 1;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+    
+    .album{
+        padding: 50px 0px 30px;
+    }
+
+    .notifications {
+        padding: 80px 10px 60px;
+    }
+
+    /* Navigation bar styling */
+    #nav {
+        padding: 1px 0;
+    }
+}
+
+/*================== Desktop styling =============*/
+@media (hover:hover){
+    #escritorio{
+        display:contents;
+    }
+
+    .card button:hover {
+        background-color: #0056b3;
+    }
+}
+  
+  
+  

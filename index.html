@@ -10,15 +10,21 @@
         <link rel="icon" href="/assets/images/icons/icon-72x72.png">
     </head>
     <body>
+        <header>
+            <h1>OPEN4CEC</h1>
+            <div id="chivato">
+                <p id="mobil_vertical">mobil_vertical</p>
+                <p id="mobil_horizontal">mobil_horizontal</p>
+                <p id="tablet_vertical">tablet_vertical</p>
+                <p id="tablet_horizontal">tablet_horizontal</p>
+                <p id="escritorio">escritorio</p>
+            </div>
+        </header>
         <div id="home">
-            <header>
-                <h1>OPEN4CEC</h1>
-                <h2>Home page</h2>
-            </header>
             <div class="album">
                 <div class="card">
                     <h2>Card Title</h2>
-                    <p>This is some text inside the card. It can be a description or any other content.</p>
+                    <p>This is some text inside the card. It can be a description or any other content. Prueba de contenido en una targeta para ver como se redimensiona según la cantidad de contenido que tiene en su interior. Podemos ver que se redimensiona bastante por no decir un montón la virgen de Guadalupe ya no sé que más escribir esto hubiera sido más fácil si hubiera ido a Lorem Ipsum.</p>
                     <button>Click Me</button>
                 </div>
                 <div class="card">
@@ -39,10 +45,6 @@
             </div>
         </div>
         <div id="alerts">
-            <header>
-                <h1>OPEN4CEC</h1>
-                <h2>Your alerts</h2>
-            </header>
             <div class="notifications">
                 <div class="notification">
                     <h2>Alert Title</h2>
@@ -90,7 +92,7 @@
                 <button onclick="showAlerts()"><h3> Alerts </h3></button>
             </div>
             <div class="nav-item" id="others-nav-item">
-                <button><h3> Others </h3></button>
+                <button onclick="pruebaFetch()"><h3> Others </h3></button>
             </div>
         </div>
     </body>

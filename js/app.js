@@ -12,3 +12,7 @@ function showAlerts(){
     Alerts.style.display = "contents";
     
 }
+
+function pruebaFetch(){
+    
+}
